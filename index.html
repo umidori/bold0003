@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown=""
+				data-separator="^\n---$"
+				data-separator-vertical="^\n>>>$">
+				<script type="text/template">
+### 実装から見るオブジェクト指向
+
+（株）ボールド 技術部 鳥海秀一
+
+---
+### 講師紹介
+- - -
+* 名前：鳥海秀一
+* 出身：北海道
+* ボールド入社：2020年5月
+* 趣味：プログラミング
+<aside class="notes">
+  発表者が見るノート   
+  伝えたいことをメモ  
+</aside>
+
+---
+### 『C++の設計と進化』より
+- - -
+<img src="./img/C++の設計と進化.png" width="80%">
+
+---
+### 攻撃的なJava設計者たち
+- - -
+* [The Java Language Environment A White Paper](https://www.stroustrup.com/1995_Java_whitepaper.pdf)
+* [詳解 Javaプログラミング](https://www.google.co.jp/books/edition/詳解_Javaプログラミング第2版/xGxzLvFeY1AC?hl=ja&gbpv=1&printsec=frontcover)
+
+---
+### オブジェクト指向観の違い
+- - -
+* Javaにとってのオブジェクト指向
+	* 守り抜かなければならない世界観
+	* プログラム作成の規範
+* C++にとってのオブジェクト指向
+	*	選択肢の一つ
+	* 便利なツール
+
+---
+### オブジェクト指向という世界観
+- - -
+* オブジェクト指向言語は、能動的な存在としてのオブジェクトという世界観をプログラミングの世界に持ち込む
+* ただし、言語の実装を見るとそれが単なる「設定」であることがわかる
+* オブジェクトは単なる変数にすぎず、メソッドも単なる関数にすぎず、情報隠蔽は存在しない
+
+---
+### 実演
+- - -
+1. コンパイラとリンカの仕事
+1. 関数の多重定義の実現方法
+1. メソッドは単なる関数
+1. 存在しない情報隠蔽
+1. 仮想関数の実現方法
+
+---
+### 次回予告
+- - -
+* 関数型プログラミングの世界
+
+
+				</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
